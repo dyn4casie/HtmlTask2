@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/C:\Users/LENOVO/Desktop/DevPro/FE/img/piggy.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Saira+Condensed:wght@500&family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(images/blue.png), url(images/green.png), url(images/pink.png), url(images/purple.png);
+            background-size: 15%, 15%, 15%, 15%;
+            background-position: left -1% top -15%, right -9% top -1%, left -5% bottom -10%, right -6.5% bottom -5%;
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+            background-color: #062863;
+            background-attachment: fixed;
+            display: block;
+            line-height: 1.1;
+        }
+        
+        main {
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .logo {
+            display: block;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        
+        .container {
+            margin: 0 auto;
+            width: 368px;
+            background-color: #fff;
+            border-radius: 20px 20px 20px 0;
+            padding: 40px;
+        }
+        
+        .header {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 32px;
+            align-items: center;
+            line-height: 1.3;
+            font-family: sans-serif;
+        }
+        
+        .form h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #083e9e;
+            font-family: 'U8', sans-serif;
+        }
+        
+        h1,
+        p {
+            margin: 0;
+            font-family: karla;
+        }
+        
+        .form p {
+            text-align: center;
+            font-family: "Tenali Ramakrishna", sans-serif;
+            font-size: 18.72px;
+            color: #4a5568;
+        }
+        
+        .form-control {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 32px;
+        }
+        
+        label {
+            line-height: 1.3;
+            margin-bottom: 6px;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: "Roboto", sans-serif;
+            color: #4a5568;
+        }
+        
+        input {
+            outline: none;
+            font-size: 100%;
+        }
+        
+        input,
+        select {
+            width: 100%;
+            background: #edf2f7;
+            color: #1a202c;
+            border: none;
+            padding: 16px;
+            -webkit-appearance: none;
+            border-radius: 4px;
+            appearance: none;
+            -webkit-box-sizing: border-box;
+            -moz-appearance: none;
+            box-sizing: border-box;
+        }
+        
+        select {
+            background-image: url(/img/down-arrow.png);
+            background-repeat: no-repeat;
+            -webkit-appearance: none;
+            background-position: 95%;
+            background-size: 4.8%;
+            border-radius: 8px;
+        }
+        
+        option {
+            font-family: "Tenali Ramakrishna", sans-serif;
+            background-color: #fff;
+            font-size: 20px;
+        }
+        
+        .btn:hover {
+            background-color: #062b6f;
+        }
+        
+         ::placeholder {
+            color: #a4a7ac;
+            font-size: 14.4px;
+            font-family: "Roboto", sans-serif;
+        }
+        
+        .btn_C {
+            display: flex;
+            flex: 1 1;
+        }
+        
+        .btn {
+            width: 100%;
+            background-color: rgb(8, 62, 158);
+            color: #fff;
+            font-weight: bold;
+            font-size: 14px;
+            border: none;
+            padding: 20px 40px;
+            border-radius: 12px 12px 12px 0;
+            cursor: pointer;
+            outline: none;
+        }
+        
+        .footer {
+            display: block;
+            text-align: center;
+            margin-top: 32px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 19.2px;
+            font-family: "Tenali Ramakrishna", sans-serif;
+        }
+        
+        .footer:hover {
+            color: #b3b3b3;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 80%;
+                padding: 32px;
+            }
+            .form h1 {
+                font-size: 30px;
+            }
+            .form p {
+                font-size: 20px;
+            }
+            .footer {
+                font-size: 18px;
+            }
+        }
+        
+        @media only screen and (max-width: 400px) {
+            .container {
+                width: 75%;
+            }
+            .btn {
+                padding: 20px 6px;
+                font-size: 12.8px;
+            }
+            label {
+                line-height: 1.7;
+            }
+            .header {
+                line-height: 1.7;
+            }
+            .form h1 {
+                font-size: 26px;
+            }
+            .form p {
+                font-size: 22px;
+                line-height: 1;
+            }
+            .footer {
+                font-size: 16px;
+            }
+            select {
+                font-size: 16px;
+            }
+        }
+    </style>
+    <title>PiggyVest | Dashboard</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <a href="#" class="logo">
+                <img src="https://dashboard.piggyvest.com/static/media/piggyvest-logo.0b78a8fa.svg" alt="Piggybank Logo" class="mb-12">
+            </a>
+        </div>
+        <div class="container">
+            <div class="form">
+                <header class="header">
+                    <h1 class="text-xl md:text-2xl text-primary font-bold font-display text-center">Create a Secure Account</h1>
+                    <p>Welcome to the future of Savings & Investments</p>
+                </header>
+                <form class="p-form" action="/" method="POST">
+                    <div class="form-control">
+                        <label>Full Name</label>
+                        <input type="text" id="fname" placeholder="Full Name" name="full_name">
+                    </div>
+
+                    <div class="form-control">
+                        <label>Email Address</label>
+                        <input type="text" id="email" placeholder="Email Address" name="email">
+                    </div>
+
+                    <div class="form-control">
+                        <label>Phone Number</label>
+                        <input type="text" id="phone" placeholder="Phone Number" name="phone_no">
+                    </div>
+
+                    <div class="form-control">
+                        <label>Password</label>
+                        <input type="password" id="password" placeholder="Password" name="password">
+                    </div>
+
+                    <div class="form-control">
+                        <label>Referrer Phone or Promo Code (Optional)</label>
+                        <input type="text" id="referrer" placeholder="Referrer Phone Or Code" name="full_name">
+                    </div>
+
+                    <div class="form-control">
+                        <label>How Did You Hear About Us? (Optional)</label>
+                        <select name="aboutus" id="about-us">
+                            <option value="">Click To Select</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Twitter">Twitter</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Friend/Family/Coworker Referral">Friend/Family/Coworker Referral</option>
+                            <option value="Google Search">Google search</option>
+                            <option value="Google playstore">Google playstore</option>
+                            <option value="Online Blog">Online Blog</option>
+                            <option value="Newspaper">Local Newspaper</option>
+                            <option value="At an event">At an event</option>
+                            <option value="Other">Other</option>
+                        </select>
+
+                    </div>
+
+                    <div class="btn_c">
+                        <button type="submit" class="btn">CREATE ACCOUNT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <a href="#" class="footer">Already have an account? Log In</a>
+    </main>
+
+</body>
+
+</html>
